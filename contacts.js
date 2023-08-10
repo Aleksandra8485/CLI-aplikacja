@@ -97,6 +97,26 @@ function addContact(name, email, phone) {
   });
 }
 
+// Testowanie czasu wykonania funkcji listContacts
+console.time("listContacts"); // Rozpoczęcie pomiaru czasu
+listContacts();
+console.timeEnd("listContacts"); // Zakończenie pomiaru czasu i wyświetlenie wyniku
+
+// Testowanie czasu wykonania funkcji getContactById
+console.time("getContactById"); // Rozpoczęcie pomiaru czasu
+getContactById("AeHIrLTr6JkxGE6SN-0Rw"); // Przykładowe ID, dostosuj do swoich danych
+console.timeEnd("getContactById"); // Zakończenie pomiaru czasu i wyświetlenie wyniku
+
+// Testowanie czasu wykonania funkcji removeContact
+console.time("removeContact"); // Rozpoczęcie pomiaru czasu
+removeContact("AeHIrLTr6JkxGE6SN-0Rw"); // Przykładowe ID, dostosuj do swoich danych
+console.timeEnd("removeContact"); // Zakończenie pomiaru czasu i wyświetlenie wyniku
+
+// Testowanie czasu wykonania funkcji addContact
+console.time("addContact"); // Rozpoczęcie pomiaru czasu
+addContact("John Doe", "john@example.com", "123-456-7890"); // Przykładowe dane, dostosuj do swoich danych
+console.timeEnd("addContact"); // Zakończenie pomiaru czasu i wyświetlenie wyniku
+
 module.exports = {
   listContacts,
   getContactById,

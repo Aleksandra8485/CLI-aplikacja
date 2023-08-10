@@ -5,5 +5,8 @@
   "scripts": {
     "start": "node index.js",
     "start:dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "commander": "^11.0.0"
   }
 }
